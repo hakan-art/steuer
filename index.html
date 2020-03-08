@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span> Steuer</span>rechner</h1>
+      <div class="wrapper">
+        <div class="info">
+          <h3>Steuer</h3>
+          <ul>
+            <li>Steuerrechner 2020</li>
+            <li><span> Steuerrechner 2019</span></li>
+            <li>Steuerrechner 2018</li>
+          </ul>
+        </div>
+        <div class="weiteres">
+          <h3>Wähle dein Jahr</h3>
+          <form action="">
+            <p>
+              <label>Jahr :</label>
+              <select name="jahr1" id="jahr">
+                <option id="zwanzigZwanzig" value="1">2020</option>
+                <option id="zwanzigNeunZehn" value="2">2019</option>
+                <option id="ZwanzigAchtZehn" value="3">2018</option>
+              </select>
+            </p>
+            <p>
+              <label>Zu versteuerndes Einkommen :</label>
+              <input id="einkommenhöhe" type="text" name="einkommen" />
+            </p>
+            <p>
+              <label>Art der Veranlagung :</label>
+              <select name="art" id="art_ver">
+                <option value="1">Einzelveranlagung</option>
+                <option value="2">Zusammenveranlagung</option>
+              </select>
+            </p>
+            <p>
+              <label>Einkommenssteuer :</label>
+              <input type="text" id="ergebnis" disabled />
+            </p>
+
+            <p class="full">
+              <button onclick="berechnung()">Berechnen</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
